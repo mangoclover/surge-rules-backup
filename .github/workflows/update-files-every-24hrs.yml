@@ -20,13 +20,13 @@ jobs:
           token: ${{ secrets.ACTIONS_TOKEN }}
             
       - name: download action
-        uses: carlosperate/download-file-action@v1.0.0
+        uses: carlosperate/download-file-action@v1.0.3
         with: 
           file-url: https://github.com/Loyalsoldier/surge-rules/raw/master/.github/workflows/run.yml
           file-name: .github/workflows/run.yml
 
       - name: download readme
-        uses: carlosperate/download-file-action@v1.0.0
+        uses: carlosperate/download-file-action@v1.0.3
         with: 
           file-url: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/master/README.md
           file-name: README.md
