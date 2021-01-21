@@ -3,6 +3,9 @@ name: Update Files Every 24 Hours
 on:
   push:
     branches: [ master ]
+    paths-ignore:
+      - README.md
+      - .github/workflows/run.yml
   workflow_dispatch:
   schedule: 
     - cron:  '0 0 */1 * *' 
