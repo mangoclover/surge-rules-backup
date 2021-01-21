@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - README.md
       - .github/workflows/run.yml
+      - parts/telegram_ips.txt
   workflow_dispatch:
   schedule: 
     - cron:  '0 0 */1 * *' 
