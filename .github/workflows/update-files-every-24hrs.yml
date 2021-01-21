@@ -31,6 +31,12 @@ jobs:
           file-url: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/master/README.md
           file-name: README.md
       
+      - name: download telegram_ips
+        uses: carlosperate/download-file-action@v1.0.0
+        with: 
+          file-url: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/master/parts/telegram_ips.txt
+          file-name: parts/telegram_ips.txt
+
       - name: Commit Changes
         run: |
           if [ -z "$(git status --porcelain)" ]; then 
